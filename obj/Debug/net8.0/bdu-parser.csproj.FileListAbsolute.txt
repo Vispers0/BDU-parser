@@ -1,0 +1,17 @@
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\bdu-parser.exe
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\bdu-parser.deps.json
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\bdu-parser.runtimeconfig.json
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\bdu-parser.dll
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\bdu-parser.pdb
+C:\VSProjects\bdu-parser\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.csproj.AssemblyReference.cache
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.AssemblyInfoInputs.cache
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.AssemblyInfo.cs
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.csproj.CoreCompileInputs.cache
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.csproj.Up2Date
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.dll
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\refint\bdu-parser.dll
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.pdb
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.genruntimeconfig.cache
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\ref\bdu-parser.dll

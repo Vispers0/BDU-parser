@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "shRu73R2uZY=",
+  "success": true,
+  "projectFilePath": "C:\\VSProjects\\bdu-parser\\bdu-parser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\visp0\\.nuget\\packages\\htmlagilitypack\\1.11.72\\htmlagilitypack.1.11.72.nupkg.sha512"
+  ],
+  "logs": []
+}
