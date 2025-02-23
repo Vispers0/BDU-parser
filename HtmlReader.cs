@@ -2,9 +2,10 @@
 
 namespace bdu_parser
 {
-    class HtmlReader
+    public class HtmlReader
     {
         public string Path { get; set; }
+        JsonReader reader;
 
         public HtmlReader(string path)
         {
@@ -28,7 +29,24 @@ namespace bdu_parser
             return outputBdus;
         }
 
-        public void ReadFromString(string input)
+        public List<string> ReadFromString(string input)
+        {
+            List<string> output = new List<string>();
+
+            var doc = new HtmlDocument();
+            doc.LoadHtml(input);
+
+            var capecIdNodes = doc.DocumentNode.SelectNodes("//a[contains(@href, 'http://capec.mitre.org/data/definitions/')]");
+
+            foreach(var item in capecIdNodes)
+            {
+                output.Add(item.Attributes["href"].Value);
+            }
+
+            return output;
+        }
+
+        public string ReadScriptFromString(string input)
         {
             var doc = new HtmlDocument();
             doc.LoadHtml(input);
@@ -43,12 +61,13 @@ namespace bdu_parser
                 cweJson = cweJson.Remove(0, 1);
                 cweJson = cweJson.Insert(cweJson.Length, "}");
 
-                Console.WriteLine(cweJson);
+                return cweJson;
             }
             catch (Exception e)
             {
-                Console.WriteLine($"ERROR: {e.Message}");
+                Console.WriteLine($"An error occured while converting to JSON: {e.Message}");
                 Console.WriteLine($"StackTrace: {e.StackTrace}");
+                return "";
             }
         }
     }

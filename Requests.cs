@@ -3,7 +3,7 @@ using System.Net.Security;
 
 namespace bdu_parser
 {
-    class Requests
+    public class Requests
     {
         private HttpClient httpClient;
 
@@ -23,16 +23,32 @@ namespace bdu_parser
         {
             try
             {
-                using HttpResponseMessage responce = await httpClient.GetAsync(httpClient.BaseAddress + bduId);
+                using HttpResponseMessage responce = await httpClient.GetAsync(bduId);
                 responce.EnsureSuccessStatusCode();
                 string responceBody = await responce.Content.ReadAsStringAsync();
 
                 return responceBody;
-                
             }
             catch (HttpRequestException e)
             {
                 return e.Message;
+            }
+        }
+
+        public async Task<string> GetCwe(string cweId)
+        {
+            try
+            {
+                using HttpResponseMessage responce = await httpClient.GetAsync(cweId);
+                responce.EnsureSuccessStatusCode();
+                string responceBody = await responce.Content.ReadAsStringAsync();
+
+                return responceBody;
+            }
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine(e.Message);
+                return "";
             }
         }
     }

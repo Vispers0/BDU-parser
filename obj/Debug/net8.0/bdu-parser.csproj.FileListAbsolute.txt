@@ -15,3 +15,4 @@ C:\VSProjects\bdu-parser\obj\Debug\net8.0\refint\bdu-parser.dll
 C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.pdb
 C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.genruntimeconfig.cache
 C:\VSProjects\bdu-parser\obj\Debug\net8.0\ref\bdu-parser.dll
+C:\VSProjects\bdu-parser\obj\Debug\net8.0\bdu-parser.sourcelink.json
