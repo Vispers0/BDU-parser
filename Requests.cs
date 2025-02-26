@@ -19,6 +19,7 @@ namespace bdu_parser
             };
         }
 
+        // Get detailed info about BDU
         public async Task<string> GetBdu(string bduId)
         {
             try
@@ -40,6 +41,23 @@ namespace bdu_parser
             try
             {
                 using HttpResponseMessage responce = await httpClient.GetAsync(cweId);
+                responce.EnsureSuccessStatusCode();
+                string responceBody = await responce.Content.ReadAsStringAsync();
+
+                return responceBody;
+            }
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine(e.Message);
+                return "";
+            }
+        }
+
+        public async Task<String> GetCapecDetails(string capecUrl)
+        {
+            try
+            {
+                using HttpResponseMessage responce = await httpClient.GetAsync(capecUrl);
                 responce.EnsureSuccessStatusCode();
                 string responceBody = await responce.Content.ReadAsStringAsync();
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bdu-parser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bb5f234d8c0fd97958b7bb7d53579376ce582b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78675fcf43a1860224b5fd3d1ee1ccb4bfe2c5b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("bdu-parser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bdu-parser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

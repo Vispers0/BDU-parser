@@ -14,10 +14,30 @@ namespace bdu_parser
 
         public string Deserealize()
         {
-            var rootObject = JsonObject.Parse(_jsonString);
-            var cwesArray = rootObject["cwes"];
-            var cweObject = cwesArray[0];
-            var cweId = cweObject["cwe_id"];
+            JsonNode? rootObject = JsonObject.Parse(_jsonString);
+
+            if (rootObject == null)
+            {
+                throw new NullReferenceException();
+            }
+            JsonNode? cwesArray = rootObject["cwes"];
+
+            if (cwesArray == null)
+            {
+                throw new NullReferenceException();
+            }
+            JsonNode? cweObject = cwesArray[0];
+
+            if (cweObject == null)
+            {
+                throw new NullReferenceException();
+            }
+            JsonNode? cweId = cweObject["cwe_id"];
+
+            if (cweId == null)
+            {
+                throw new NullReferenceException();
+            }
 
             return cweId.ToString();
         }
